@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JuanQuizhpi</title>
+    <!--Ente parte tenemos dos opciones para trabajar con CSS-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Crearemos una etiqueta que contenga todo el contenido de la pagina web-->
+    <div id="container">
+      <header>
+        <h1 class="title">FC BARCELONA</h1>
+      </header>
+
+      <nav>
+        <!--Etiqueta para una barra de navegacion "nav "-->
+        <button class="btn">Entradas</button>
+        <button class="btn">Museo</button>
+        <button class="btn">Barca TV+</button>
+      </nav>
+
+      <!--Creamos una clase clearfix para que cuando se flote los elementos estos mantengan su sitio-->
+      <div class="clearfix"></div>
+
+      <!--Etiqueta para la parte del contenido-->
+      <section id="content">
+        <article class="article">
+          <h2>Mejor Delantero</h2>
+          <a
+            href="https://www.fcbarcelona.es/es/futbol/primer-equipo/jugadores/5109/robert-lewandowski"
+            >Lewandowski</a
+          ><br />
+          <img
+            id="imagen"
+            class="zoom"
+            width="350px"
+            alt="DEL"
+            src="https://www.fcbarcelona.com/photo-resources/2022/11/02/85247947-27dc-488c-a6cb-d81c5e391559/09-ROBERT_LEWANDOWSKI.jpg?width=1200&height=750"
+          />
+        </article>
+        <article class="article">
+          <h2>Mejor Mediocampo</h2>
+          <a
+            href="https://www.fcbarcelona.es/es/futbol/primer-equipo/jugadores/116719/pablo-martin-paez-gavira"
+            >Gavi</a
+          ><br />
+          <img
+            id="imagen2"
+            class="zoom"
+            width="350px"
+            alt="MED"
+            src="https://www.fcbarcelona.com/photo-resources/2022/11/02/68339d90-282b-4e03-98fa-54395765867c/30-GAVI_.jpg?width=1200&height=750"
+          />
+        </article>
+        <article class="article">
+          <h2>Mejor Portero</h2>
+          <a
+            href="https://www.fcbarcelona.es/es/futbol/primer-equipo/jugadores/11072/marc-andre-ter-stegen"
+            >Ter Stegen</a
+          ><br />
+          <img
+            id="imagen3"
+            class="zoom"
+            width="350px"
+            alt="POR"
+            src="https://www.fcbarcelona.com/photo-resources/2022/11/02/d57390d3-5cd5-426f-a1b2-e4cefb1a3d9a/01-MARC-ANDRE_TER_STEGEN.jpg?width=1200&height=750"
+          />
+        </article>
+      </section>
+
+      <!--Etiqueta para la barra lateral o de navegacion-->
+      <aside>
+        <h2>FCB</h2>
+        <form>
+          <input type="text" id="datoBusqueda" />
+        </form>
+        <button id="buscarJ" onclick="buscar()" class="btn">Buscar</button>
+        <button id="limpiarB" onclick="limpiar()" class="btn">Limpiar</button>
+        <p id="respBusqueda"></p>
+        <p id="titleS">Seguidores</p>
+        <button id="btnSegir" class="btn">Seguir</button>
+        <button id="btnEliminar" class="btn">Eliminar</button>
+        <img
+          id="imSegui"
+          class="imgS"
+          width="50px"
+          alt="DEL"
+          src="https://res.cloudinary.com/dte7upwcr/image/upload/f_auto,w_1200/blog/blog2/como-conseguir-seguidores-en-instagram/como-conseguir-seguidores-en-instagram-img_header.jpg"
+        />
+        <p id="seguidores"></p>
+      </aside>
+
+      <div class="clearfix"></div>
+      <!--Etiqueta para crear un pie de pagina-->
+      <footer>Juan Quizhpi WEB &COPY; 2023</footer>
+    </div>
+    <div id="background"></div>
+    <div class="flotante">
+      <img
+        src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/04/03/cbeb1e9e-335a-4551-8dfa-60072d62622a/sicker-kounde-v2-EN.png"
+      />
+    </div>
+
+    <div class="flotante2">
+      <img
+        width="250px"
+        src="https://www.fcbarcelona.com/fcbarcelona/photo/2023/03/14/f0b1155c-a627-458b-8e96-0f72c141d1f5/motomami-sticker-8.png"
+      />
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>

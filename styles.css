@@ -1,0 +1,306 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Selector de etiqueta*/
+body {
+  background: white; /*Cambio de color del fondo*/
+  font-family: Arial, Helvetica, sans-serif; /*Cambiamos fuente de toda la pagina */
+}
+
+/*Selector de id*/
+#container {
+  /*Le damos un ancho*/
+  /*width: 70%;*/
+  width: 1100px; /*Le damos un tamaño al contenedor*/
+  margin: 0px auto; /*Le asignamos un argen al gontenedor de la pagia web*/
+  border: 1px solid #ffc300; /*Le asignamos un borde al contenedor de la pagina web*/
+}
+
+header {
+  background: #042247; /*cambiamos el color del fondo de la cabecera*/
+  height: 100px; /*Establecemos la altura del elemento en la pagina web*/
+  width: 100%; /*Asignamos un tamaño a la cabecera de la pagina web*/
+  margin: 0px; /*Le asignamos margenes a la cabecera de la pagina web*/
+  text-align: center; /*Hacemos que el texto de la cabecera se encuentre centrado*/
+  line-height: 100px; /*Asignamos la altura de linea*/
+  color: white; /*Le damos a la letra un color blanco*/
+  border-bottom: 1px solid #ffc300; /*Le damos un borde a la cabecera por la parte de abajo*/
+}
+
+nav {
+  background: #042247; /*Le asignamos un color a la barra de navegacion*/
+  color: white; /*El texto que se encuentre en la nav sea de color blanco*/
+  height: 50px; /*Establecemos una altura al elemento*/
+  border-bottom: 1px solid #ffc300; /*Le asignamos un borde por la parte de abajo a la nav*/
+  padding-top: 5px;
+}
+nav ul li {
+  /*Seleciona los elementos que estan dentro de la nav*/
+  float: left; /*cada uno de los elementos se floten a las izquierda */
+  list-style: none; /*para que los elementos no tengan ningun tipo de estilo*/
+  margin: 10px; /*Le asignamos un margen a estos elementos*/
+  line-height: 20px; /**/
+}
+
+.clearfix {
+  clear: both; /*Cuando floten los elementos mantengan su sitio*/
+}
+
+#content {
+  float: left;
+  text-align: center;
+  width: calc(80% - 80px);
+  min-height: 980px; /*le daremos una altura minima a este elemento*/
+  background: whitesmoke;
+  padding: 40px;
+}
+
+aside {
+  float: left;
+  color: white;
+  width: calc(
+    20% - 20px
+  ); /*Funcion calc para ajustar ya que quito los 20px de cada lado*/
+  min-height: 1050px; /*altura minima para el aside*/
+  background: #042247;
+  padding-left: 20px; /*margenes por izquierda*/
+  padding-top: 10px; /*Marjenes por derecha*/
+}
+
+footer {
+  background: #042247;
+  color: white;
+  text-align: center;
+  height: 50px;
+  line-height: 50px; /*centre verticalemnte la linea de texto*/
+  border-bottom: 1px solid #ffc300;
+  border-top: 1px solid #ffc300;
+}
+
+.article {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.article:first-child {
+  /*Para selecionar unicamente el primer articulo y modificarlo*/
+  padding-top: 10px;
+  border-top: 1px solid black;
+}
+
+.article h2 {
+  /*Seleciona todos h2 que esten dentro del articulo*/
+  font-size: 25px;
+}
+#btnSegir {
+  background-color: #ffc300;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /*tamaño fuente texto*/
+  border-radius: 14px; /*le damos unos bordes redondados*/
+}
+#btnEliminar {
+  background-color: #ffc300;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none; /*Quitamos la decoracion al elemento */
+  display: inline-block; /*El elemento trenda caracteristicas de un elemento de linea y un elemento de bloque*/
+  font-size: 16px;
+  border-radius: 14px;
+}
+#seguidores {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 3px;
+}
+
+#titleS {
+  margin: 10px;
+  font-size: 20px;
+}
+#buscarJ {
+  margin: 10px;
+  align-items: center;
+  background-color: #ffc300;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 14px; /**/
+}
+
+#datoBusqueda {
+  border-radius: 14px;
+  padding: 5px 10px;
+}
+#respBusqueda {
+  border-radius: 10px;
+  padding: 20px 10px;
+  border: none;
+  padding-right: 10px;
+  background: white;
+  color: black;
+}
+#imSegui {
+  margin: 20px;
+  margin-left: 75px;
+  border-radius: 14px;
+}
+
+#limpiarB {
+  background-color: #ffc300;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+/*Para botones con animacion*/
+.btn {
+  display: inline-block;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffc300;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.1);
+}
+
+/*Para acer zoom cuando pase por enciam de la imagen*/
+.imgS {
+  display: inline-block;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  /*background-color: #ffc300;*/
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.imgS:hover {
+  /*background-color: #d4ac0d;*/
+  transform: scale(1.1);
+}
+
+/*Estilo de titulo con movimiento*/
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  animation: title-animation 1s ease-in-out infinite alternate;
+}
+@keyframes title-animation {
+  0% {
+    transform: translateY(0);
+    color: #004d98;
+  }
+  100% {
+    transform: translateY(-10px);
+    color: #edbb00;
+  }
+}
+
+#imagen {
+  border-radius: 40px;
+}
+
+#imagen2 {
+  border-radius: 40px;
+}
+
+#imagen3 {
+  border-radius: 40px;
+}
+
+/*Animacion de zoom en la imagen */
+.zoom {
+  transition: transform 0.2s; /* Agregamos una transición */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* Escalamos la imagen al pasar el cursor sobre ella */
+}
+
+/*Fondo que cambia*/
+#background {
+  background-image: url('ruta/de/la/primera/imagen.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/*Elemento flotante*/
+.flotante {
+  position: absolute; /* o position: fixed; */
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 100px;
+  /*background-color: #ccc;*/
+  z-index: 1;
+}
+
+.flotante {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 100px;
+  /*background-color: #ccc;*/
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.flotante:hover {
+  top: 100px;
+  left: 100px;
+}
+
+/*Publicidad 2*/
+.flotante2 {
+  position: absolute;
+  top: 50px;
+  right: 50px; /* posición a la derecha */
+  width: 200px;
+  height: 100px;
+  /*background-color: #ccc;*/
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.flotante2:hover {
+  top: 100px;
+  right: 100px;
+}
